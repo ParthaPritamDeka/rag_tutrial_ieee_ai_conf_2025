@@ -1,5 +1,6 @@
 langchain==0.3.24
 langchain_community==0.3.23
 langchain_ollama==0.3.2
-pymupdf
-fitz
+pymupdf==1.25.5
+ollama==0.4.8
+pypdf==5.4.0
