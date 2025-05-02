@@ -1,4 +1,6 @@
 """
+Developed by: Partha Pritam Deka
+
 This script implements a PDF Q&A chatbot using Streamlit and LangChain. The chatbot allows users to upload PDF files, 
 process the content, and ask questions based on the uploaded documents. Below is a step-by-step explanation of the code:
 
@@ -120,6 +122,7 @@ st.markdown(
 
 st.markdown('<div class="main-header">📄 RAG Chatbot with OLLAMA - llama3, FAISS, Nomic Embedding </div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-header">Upload your PDF documents and ask questions to get AI-powered answers!</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-header">Developed by Partha Pritam Deka</div>', unsafe_allow_html=True)
 
 # Initialize session state for history
 # if "history" not in st.session_state:
