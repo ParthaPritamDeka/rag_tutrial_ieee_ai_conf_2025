@@ -2,6 +2,9 @@
 
 This repository contains the code and resources for the **Retrieval-Augmented Generation (RAG) Tutorial** presented at the IEEE AI Conference 2025. The tutorial demonstrates how to build intelligent systems that combine retrieval-based techniques with generative AI models.
 
+## Author
+This tutorial was created by Partha Pritam Deka
+
 ## Features
 - Integration with LangChain and Ollama for advanced language model capabilities.
 - PDF processing using PyMuPDF and PyPDF.
@@ -36,4 +39,4 @@ pip install -r requirements.txt
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Contact
-For questions or feedback, please contact [your-email@example.com].
+For questions or feedback, please contact [partha.pritamdekaexample.com].
