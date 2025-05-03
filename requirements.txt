@@ -4,3 +4,4 @@ langchain_ollama==0.3.2
 pymupdf==1.25.5
 ollama==0.4.8
 pypdf==5.4.0
+

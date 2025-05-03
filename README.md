@@ -10,11 +10,6 @@ This tutorial was created by Partha Pritam Deka
 - PDF processing using PyMuPDF and PyPDF.
 - Community-driven extensions for LangChain.
 
-## Requirements
-To set up the environment, install the dependencies listed in `requirements.txt`:
-```bash
-pip install -r requirements.txt
-```
 
 ## Usage
 1. Clone the repository:
