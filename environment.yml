@@ -1,0 +1,14 @@
+name: rag_tutorial_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12.4
+  - pip
+  - pip:
+      - langchain==0.3.24
+      - langchain_community==0.3.23
+      - langchain_ollama==0.3.2
+      - pymupdf==1.25.5
+      - ollama==0.4.8
+      - pypdf==5.4.0
