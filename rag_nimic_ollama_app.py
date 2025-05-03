@@ -227,7 +227,7 @@ if uploaded_files:
         By combining FAISS with the Ollama embeddings and the RetrievalQA chain, the app provides a robust and efficient mechanism 
         for answering user queries based on uploaded PDF documents.
         """
-        embeddings = OllamaEmbeddings(model='nomic-embed-text', base_url="http://localhost:11434")
+        embeddings = OllamaEmbeddings(model='nomic-embed-text', base_url="http://localhost:11434")#base_url="http://10.124.134.37:11434")#base_url="http://localhost:11434")
         return FAISS.from_documents(_chunks, embedding=embeddings)
 
 
