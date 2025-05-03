@@ -23,17 +23,35 @@ pip install -r requirements.txt
    cd rag_tutorial_ieee_ai_conf_2025
    ```
 
-2. Install the required Python packages:
+## Setting Up the Environment and running the RAG application
+You can create the Python environment for this project using the provided `environment.yml` file:
+
+1. Create the environment:
    ```bash
-   pip install -r requirements.txt
+   conda env create -f environment.yml
    ```
 
-3. Run the tutorial scripts provided in the repository.
+2. Activate the environment:
+   ```bash
+   conda activate rag_tutorial_env
+   ```
 
+3. Run the following scripts on your conda prompt under your create Python enviroment:
+   ```
+   ollama pull llama3
+
+   ollama run llama3
+
+   ollama pull nomic-embed-text
+   ```
+
+4. Run the following scripts on your conda prompt under your create Python enviroment:
+
+   ```
+   streatmlit run rag_nomic_ollama_app.py
+   ```
 ## Repository Structure
-- `requirements.txt`: Lists the Python dependencies.
-- `scripts/`: Contains example scripts for RAG workflows.
-- `data/`: Placeholder for datasets used in the tutorial.
+
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
