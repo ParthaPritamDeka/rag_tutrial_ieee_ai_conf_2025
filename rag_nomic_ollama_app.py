@@ -146,6 +146,29 @@ if uploaded_files:
 
         # Adjust chunk size and overlap for better context
         splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=200)
+        """
+        The chunk_size parameter in the RecursiveCharacterTextSplitter class is crucial because it defines the maximum size of each text chunk after splitting. Here's why it matters:
+
+        Text Splitting Logic:
+
+        The _split_text method uses chunk_size to determine whether a split text segment is "small enough" to be included in the final chunks.
+        If a segment exceeds the chunk_size, the method recursively splits it further using the next separator in the list until the segment is small enough or no more separators are available.
+        Efficiency in Processing:
+
+        Many applications, such as natural language processing (NLP) or machine learning, require text to be processed in manageable chunks. For example, models like GPT or BERT have token limits, and splitting text into chunks ensures that the input fits within these constraints.
+        Avoiding Over-Splitting:
+
+        The chunk_size ensures that the text is split into reasonably sized chunks without being overly fragmented. This helps maintain the context within each chunk, which is important for tasks like summarization or question answering.
+        Customizability:
+
+        By setting chunk_size, you can control the granularity of the text chunks based on your application's requirements. For example, a smaller chunk_size might be useful for fine-grained analysis, while a larger chunk_size might preserve more context.
+        Example:
+        If chunk_size=800 and chunk_overlap=200, the splitter will:
+
+        Create chunks of up to 800 characters.
+        Allow overlapping of 200 characters between consecutive chunks to preserve context across splits.
+        This balance between chunk size and overlap ensures that the text is split efficiently while retaining enough context for downstream tasks.
+        """
         chunks = splitter.split_documents(all_texts)
 
     # Cache vector store creation to avoid recomputation
