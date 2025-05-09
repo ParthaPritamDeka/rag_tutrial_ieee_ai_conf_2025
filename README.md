@@ -14,7 +14,8 @@ This tutorial was created by Partha Pritam Deka
 ## Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/rag_tutorial_ieee_ai_conf_2025.git
+   git clone https://github.com/your-username/rag_tutrial_ieee_ai_conf_2025.git
+cd rag_tutorial_ieee_ai_conf_2025.git
    cd rag_tutorial_ieee_ai_conf_2025
    ```
 
@@ -34,8 +35,6 @@ You can create the Python environment for this project using the provided `envir
 3. Run the following scripts on your conda prompt under your create Python enviroment:
    ```
    ollama pull llama3
-
-   ollama run llama3
 
    ollama pull nomic-embed-text
    ```
