@@ -15,8 +15,7 @@ This tutorial was created by Partha Pritam Deka
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/rag_tutrial_ieee_ai_conf_2025.git
-cd rag_tutorial_ieee_ai_conf_2025.git
-   cd rag_tutorial_ieee_ai_conf_2025
+   cd rag_tutrial_ieee_ai_conf_2025
    ```
 
 ## Setting Up the Environment and running the RAG application
